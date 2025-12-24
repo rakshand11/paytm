@@ -7,9 +7,9 @@ import { SubHeading } from "../components/SubHeading";
 
 export const Signin = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [email, setEmail] = useState("");
+  const [_email, setEmail] = useState("");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [password, setPassword] = useState("");
+  const [_password, setPassword] = useState("");
 
   return (
     <div>
