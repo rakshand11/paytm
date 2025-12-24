@@ -6,7 +6,9 @@ import { InputBox } from "../components/Inputbox";
 import { SubHeading } from "../components/SubHeading";
 
 export const Signin = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [email, setEmail] = useState("");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [password, setPassword] = useState("");
 
   return (

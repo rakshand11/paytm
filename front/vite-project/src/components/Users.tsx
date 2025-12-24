@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "./Button";
-import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
 import { axiosInstance } from "./axios";
 
@@ -81,7 +81,7 @@ function User({ user }: userProps) {
 
       <div className="flex flex-col justify-center h-ful">
         <Button
-          onClick={(e) => {
+          onClick={() => {
             navigate("/send?id=" + user._id + "&name=" + user.firstName);
           }}
           label={"Send Money"}
