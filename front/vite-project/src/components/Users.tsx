@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { axiosInstance } from "./axios";
 
 type UserType = {
   firstName: string;
@@ -24,8 +25,8 @@ export const Users = () => {
       return;
     }
 
-    axios
-      .get("http://localhost:3000/user/bulk?filter=" + filter, {
+    axiosInstance
+      .get(`/user/bulk?filter=` + filter, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
